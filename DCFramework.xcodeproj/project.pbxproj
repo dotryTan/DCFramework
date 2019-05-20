@@ -7,40 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0439B06E2279A5190085BF0D /* UIColor+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439B06B2279A5190085BF0D /* UIColor+DC.swift */; };
-		0439B06F2279A5190085BF0D /* String+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439B06C2279A5190085BF0D /* String+DC.swift */; };
-		0439B0702279A5190085BF0D /* DCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439B06D2279A5190085BF0D /* DCTextField.swift */; };
-		0439B0722279A5490085BF0D /* DCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439B0712279A5490085BF0D /* DCTextView.swift */; };
-		0439B0742279A6CB0085BF0D /* DCCountDownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439B0732279A6CB0085BF0D /* DCCountDownTextView.swift */; };
-		0439B0762279A9CF0085BF0D /* UIView+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439B0752279A9CF0085BF0D /* UIView+DC.swift */; };
 		045028E22276E69100088784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045028E12276E69100088784 /* AppDelegate.swift */; };
 		045028E42276E69100088784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045028E32276E69100088784 /* ViewController.swift */; };
 		045028E72276E69100088784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045028E52276E69100088784 /* Main.storyboard */; };
 		045028E92276E69200088784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045028E82276E69200088784 /* Assets.xcassets */; };
 		045028EC2276E69200088784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045028EA2276E69200088784 /* LaunchScreen.storyboard */; };
-		047F428E2281523F00EF6571 /* ic_rotate_90_degrees_ccw.png in Resources */ = {isa = PBXBuildFile; fileRef = 047F42892281523F00EF6571 /* ic_rotate_90_degrees_ccw.png */; };
-		047F428F2281523F00EF6571 /* cycle_bottom_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 047F428A2281523F00EF6571 /* cycle_bottom_right.png */; };
-		047F42902281523F00EF6571 /* cycle_bottom_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 047F428B2281523F00EF6571 /* cycle_bottom_left.png */; };
-		047F42912281523F00EF6571 /* cycle_top_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 047F428C2281523F00EF6571 /* cycle_top_left.png */; };
-		047F42922281523F00EF6571 /* cycle_top_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 047F428D2281523F00EF6571 /* cycle_top_right.png */; };
-		047F42942281526000EF6571 /* 25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047F42932281526000EF6571 /* 25.jpg */; };
-		047F429722856F4D00EF6571 /* xcode.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 047F429622856F4C00EF6571 /* xcode.jpeg */; };
-		04FB708A227E87EE00C7B2B7 /* NSRegularExpression+DC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB7089227E87EE00C7B2B7 /* NSRegularExpression+DC.swift */; };
-		04FB708C227EE21700C7B2B7 /* DCLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB708B227EE21700C7B2B7 /* DCLocationManager.swift */; };
-		04FB708E228017C600C7B2B7 /* DCEditImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB708D228017C600C7B2B7 /* DCEditImageController.swift */; };
-		04FB709022801BAF00C7B2B7 /* DCEditImageActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB708F22801BAF00C7B2B7 /* DCEditImageActionView.swift */; };
-		04FB709222801BE400C7B2B7 /* DCEditImageEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB709122801BE400C7B2B7 /* DCEditImageEditView.swift */; };
-		04FB709422801BFD00C7B2B7 /* DCEditImageCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB709322801BFD00C7B2B7 /* DCEditImageCaptureView.swift */; };
 		8AA9161EEA5F70BBFB66D90D /* Pods_DCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0FE0B852942A4D40BF6541 /* Pods_DCFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0439B06B2279A5190085BF0D /* UIColor+DC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+DC.swift"; sourceTree = "<group>"; };
-		0439B06C2279A5190085BF0D /* String+DC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DC.swift"; sourceTree = "<group>"; };
-		0439B06D2279A5190085BF0D /* DCTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCTextField.swift; sourceTree = "<group>"; };
-		0439B0712279A5490085BF0D /* DCTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTextView.swift; sourceTree = "<group>"; };
-		0439B0732279A6CB0085BF0D /* DCCountDownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCCountDownTextView.swift; sourceTree = "<group>"; };
-		0439B0752279A9CF0085BF0D /* UIView+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DC.swift"; sourceTree = "<group>"; };
 		045028DE2276E69100088784 /* DCFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045028E12276E69100088784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045028E32276E69100088784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,19 +23,6 @@
 		045028E82276E69200088784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045028EB2276E69200088784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045028ED2276E69200088784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		047F42892281523F00EF6571 /* ic_rotate_90_degrees_ccw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_rotate_90_degrees_ccw.png; sourceTree = "<group>"; };
-		047F428A2281523F00EF6571 /* cycle_bottom_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_bottom_right.png; sourceTree = "<group>"; };
-		047F428B2281523F00EF6571 /* cycle_bottom_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_bottom_left.png; sourceTree = "<group>"; };
-		047F428C2281523F00EF6571 /* cycle_top_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_top_left.png; sourceTree = "<group>"; };
-		047F428D2281523F00EF6571 /* cycle_top_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_top_right.png; sourceTree = "<group>"; };
-		047F42932281526000EF6571 /* 25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 25.jpg; sourceTree = "<group>"; };
-		047F429622856F4C00EF6571 /* xcode.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xcode.jpeg; sourceTree = "<group>"; };
-		04FB7089227E87EE00C7B2B7 /* NSRegularExpression+DC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+DC.swift"; sourceTree = "<group>"; };
-		04FB708B227EE21700C7B2B7 /* DCLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCLocationManager.swift; sourceTree = "<group>"; };
-		04FB708D228017C600C7B2B7 /* DCEditImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCEditImageController.swift; sourceTree = "<group>"; };
-		04FB708F22801BAF00C7B2B7 /* DCEditImageActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCEditImageActionView.swift; sourceTree = "<group>"; };
-		04FB709122801BE400C7B2B7 /* DCEditImageEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCEditImageEditView.swift; sourceTree = "<group>"; };
-		04FB709322801BFD00C7B2B7 /* DCEditImageCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCEditImageCaptureView.swift; sourceTree = "<group>"; };
 		06D2C1F93FE7130B60922172 /* Pods-DCFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCFramework/Pods-DCFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		5F0FE0B852942A4D40BF6541 /* Pods_DCFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBF1376724858B1A0FF585B /* Pods-DCFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCFramework/Pods-DCFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,40 +40,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0411E08622924AC400A22822 /* class */ = {
-			isa = PBXGroup;
-			children = (
-				0439B06D2279A5190085BF0D /* DCTextField.swift */,
-				0439B0712279A5490085BF0D /* DCTextView.swift */,
-				0439B0732279A6CB0085BF0D /* DCCountDownTextView.swift */,
-				04FB708B227EE21700C7B2B7 /* DCLocationManager.swift */,
-			);
-			name = class;
-			path = DCFramework/DCFramework/class;
-			sourceTree = SOURCE_ROOT;
-		};
-		0411E08722924AC400A22822 /* extension */ = {
-			isa = PBXGroup;
-			children = (
-				0439B06C2279A5190085BF0D /* String+DC.swift */,
-				04FB7089227E87EE00C7B2B7 /* NSRegularExpression+DC.swift */,
-				0439B06B2279A5190085BF0D /* UIColor+DC.swift */,
-				0439B0752279A9CF0085BF0D /* UIView+DC.swift */,
-			);
-			name = extension;
-			path = DCFramework/DCFramework/extension;
-			sourceTree = SOURCE_ROOT;
-		};
-		0411E08822924C6300A22822 /* DCFramework */ = {
-			isa = PBXGroup;
-			children = (
-				0411E08622924AC400A22822 /* class */,
-				0411E08722924AC400A22822 /* extension */,
-				047F42952282695600EF6571 /* DCEditImageController */,
-			);
-			path = DCFramework;
-			sourceTree = "<group>";
-		};
 		045028D52276E69100088784 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +61,6 @@
 		045028E02276E69100088784 /* DCFramework */ = {
 			isa = PBXGroup;
 			children = (
-				0411E08822924C6300A22822 /* DCFramework */,
 				045028E12276E69100088784 /* AppDelegate.swift */,
 				045028E32276E69100088784 /* ViewController.swift */,
 				045028E52276E69100088784 /* Main.storyboard */,
@@ -142,32 +69,6 @@
 				045028ED2276E69200088784 /* Info.plist */,
 			);
 			path = DCFramework;
-			sourceTree = "<group>";
-		};
-		047F42882281523F00EF6571 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				047F429622856F4C00EF6571 /* xcode.jpeg */,
-				047F42932281526000EF6571 /* 25.jpg */,
-				047F42892281523F00EF6571 /* ic_rotate_90_degrees_ccw.png */,
-				047F428A2281523F00EF6571 /* cycle_bottom_right.png */,
-				047F428B2281523F00EF6571 /* cycle_bottom_left.png */,
-				047F428C2281523F00EF6571 /* cycle_top_left.png */,
-				047F428D2281523F00EF6571 /* cycle_top_right.png */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		047F42952282695600EF6571 /* DCEditImageController */ = {
-			isa = PBXGroup;
-			children = (
-				047F42882281523F00EF6571 /* Source */,
-				04FB708D228017C600C7B2B7 /* DCEditImageController.swift */,
-				04FB709322801BFD00C7B2B7 /* DCEditImageCaptureView.swift */,
-				04FB709122801BE400C7B2B7 /* DCEditImageEditView.swift */,
-				04FB708F22801BAF00C7B2B7 /* DCEditImageActionView.swift */,
-			);
-			path = DCEditImageController;
 			sourceTree = "<group>";
 		};
 		17E73F8B4BD1697BD090AB01 /* Pods */ = {
@@ -247,16 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047F42902281523F00EF6571 /* cycle_bottom_left.png in Resources */,
 				045028EC2276E69200088784 /* LaunchScreen.storyboard in Resources */,
 				045028E92276E69200088784 /* Assets.xcassets in Resources */,
-				047F42942281526000EF6571 /* 25.jpg in Resources */,
 				045028E72276E69100088784 /* Main.storyboard in Resources */,
-				047F429722856F4D00EF6571 /* xcode.jpeg in Resources */,
-				047F428F2281523F00EF6571 /* cycle_bottom_right.png in Resources */,
-				047F42922281523F00EF6571 /* cycle_top_right.png in Resources */,
-				047F42912281523F00EF6571 /* cycle_top_left.png in Resources */,
-				047F428E2281523F00EF6571 /* ic_rotate_90_degrees_ccw.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,20 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0439B0742279A6CB0085BF0D /* DCCountDownTextView.swift in Sources */,
-				04FB708C227EE21700C7B2B7 /* DCLocationManager.swift in Sources */,
 				045028E42276E69100088784 /* ViewController.swift in Sources */,
-				0439B06E2279A5190085BF0D /* UIColor+DC.swift in Sources */,
-				0439B0722279A5490085BF0D /* DCTextView.swift in Sources */,
 				045028E22276E69100088784 /* AppDelegate.swift in Sources */,
-				04FB709222801BE400C7B2B7 /* DCEditImageEditView.swift in Sources */,
-				0439B0762279A9CF0085BF0D /* UIView+DC.swift in Sources */,
-				04FB709422801BFD00C7B2B7 /* DCEditImageCaptureView.swift in Sources */,
-				0439B06F2279A5190085BF0D /* String+DC.swift in Sources */,
-				04FB708E228017C600C7B2B7 /* DCEditImageController.swift in Sources */,
-				0439B0702279A5190085BF0D /* DCTextField.swift in Sources */,
-				04FB708A227E87EE00C7B2B7 /* NSRegularExpression+DC.swift in Sources */,
-				04FB709022801BAF00C7B2B7 /* DCEditImageActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

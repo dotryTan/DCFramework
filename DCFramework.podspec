@@ -8,7 +8,8 @@ Pod::Spec.new do |spec|
   spec.authors = { 'DCFramwork' => '942659593@qq.com' }
   spec.platform = :ios, "9.0"
   spec.source = { :git => "https://github.com/dotryTan/DCFramework.git", :tag => spec.version }
-  spec.source_files  = "DCFramework/DCFramework/**/*.swift"
+  spec.source_files = "DCFramework/DCFramework/**/*.swift"
+  spec.resources = "DCFramework/DCFramework/DCEditImageController/Source"
   spec.framework  = "UIKit"
   spec.dependency "SnapKit"
   spec.dependency "RxCocoa"
