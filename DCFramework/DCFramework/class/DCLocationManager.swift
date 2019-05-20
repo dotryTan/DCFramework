@@ -9,7 +9,7 @@
 import CoreLocation.CLLocationManager
 import UIKit.UIAlertController
 
-class DCLocationManager: NSObject {
+public class DCLocationManager: NSObject {
     
     private let manager = CLLocationManager()
     private let geocoder = CLGeocoder()
@@ -52,7 +52,7 @@ class DCLocationManager: NSObject {
 }
 
 extension DCLocationManager: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         geocoder.reverseGeocodeLocation(locations.last!) { [weak self] (places, error) in
             guard let `self` = self, let places = places else { return }
             if self.cancelWhenDidUpdateLocations {

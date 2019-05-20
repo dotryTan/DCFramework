@@ -10,7 +10,7 @@ import UIKit.UITextView
 import RxCocoa
 import NSObject_Rx
 
-class DCCountDownTextView: UIView {
+public class DCCountDownTextView: UIView {
     private let textView = DCTextView()
     private let placeholderLabel = UILabel()
     private let lengthLabel = UILabel()
@@ -140,7 +140,7 @@ class DCCountDownTextView: UIView {
 }
 
 extension DCCountDownTextView: UITextViewDelegate {
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if isFilterEmoji {
             return text.count > 0 ? !text.isContainsEmoji : true
         } else {

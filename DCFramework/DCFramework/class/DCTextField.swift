@@ -8,7 +8,7 @@
 
 import UIKit.UITextField
 
-class DCTextField: UITextField {
+public class DCTextField: UITextField {
     @IBInspectable var maxLength: UInt = 0
     
     override init(frame: CGRect) {
@@ -48,19 +48,19 @@ class DCTextField: UITextField {
         }
     }
     
-    override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+    override public func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         var rect = super.leftViewRect(forBounds: bounds)
         rect.origin.x += 15
         return rect
     }
     
-    override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
+    override public func rightViewRect(forBounds bounds: CGRect) -> CGRect {
         var rect = super.leftViewRect(forBounds: bounds)
         rect.origin.x -= 15
         return rect
     }
     
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
+    override public func textRect(forBounds bounds: CGRect) -> CGRect {
         var rect = super.textRect(forBounds: bounds)
         if leftView != nil && rightView != nil {
             rect.origin.x += 10
@@ -74,7 +74,7 @@ class DCTextField: UITextField {
         return rect
     }
     
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+    override public func editingRect(forBounds bounds: CGRect) -> CGRect {
         var rect = super.editingRect(forBounds: bounds)
         if leftView != nil && rightView != nil {
             rect.origin.x += 10

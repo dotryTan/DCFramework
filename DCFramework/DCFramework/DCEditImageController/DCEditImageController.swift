@@ -14,10 +14,10 @@ public protocol DCEditImageControllerDelegate: NSObjectProtocol {
 }
 
 public class DCEditImageController: UIViewController {
-    var originImage: UIImage!
-    var editSize = CGSize(width: UIScreen.main.bounds.width - 20 * 2, height: UIScreen.main.bounds.width - 20 * 2)
-    var maskAnimated = true
-    weak var delegate: DCEditImageControllerDelegate?
+    public var originImage: UIImage!
+    public var editSize = CGSize(width: UIScreen.main.bounds.width - 20 * 2, height: UIScreen.main.bounds.width - 20 * 2)
+    public var maskAnimated = true
+    public weak var delegate: DCEditImageControllerDelegate?
     
     private let scrollView = UIScrollView()
     private let imageView = UIImageView()
