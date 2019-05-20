@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let vc = DCEditImageController()
-        vc.originImage = UIImage(contentsOfFile: Bundle.main.path(forResource: "xcode", ofType: "jpeg")!)
+        vc.originImage = UIImage(contentsOfFile: Bundle(for: ViewController.self).path(forResource: "xcode", ofType: "jpeg")!)
         vc.delegate = self
         vc.editSize = CGSize(width: 300, height: 200)
         present(vc, animated: true, completion: nil)

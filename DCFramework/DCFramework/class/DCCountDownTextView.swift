@@ -14,13 +14,13 @@ public class DCCountDownTextView: UIView {
     private let textView = DCTextView()
     private let placeholderLabel = UILabel()
     private let lengthLabel = UILabel()
-    @IBInspectable var maxLength: UInt = 0 {
+    @IBInspectable public var maxLength: UInt = 0 {
         didSet {
             textView.maxLength = maxLength
             lengthLabel.text = String.init(format: "%lu/%lu字", textView.text.count, maxLength)
         }
     }
-    @IBInspectable var isHiddenLength: Bool = false {
+    @IBInspectable public var isHiddenLength: Bool = false {
         willSet {
             lengthLabel.isHidden = newValue
             textView.snp.updateConstraints { (make) in
@@ -28,7 +28,7 @@ public class DCCountDownTextView: UIView {
             }
         }
     }
-    @IBInspectable var text: String? {
+    @IBInspectable public var text: String? {
         set {
             textView.text = newValue ?? ""
         }
@@ -36,38 +36,38 @@ public class DCCountDownTextView: UIView {
             return textView.text
         }
     }
-    @IBInspectable var font = UIFont.systemFont(ofSize: 13) {
+    @IBInspectable public var font = UIFont.systemFont(ofSize: 13) {
         didSet {
             textView.font = font
             placeholderLabel.font = font
         }
     }
-    @IBInspectable var lengthFont = UIFont.systemFont(ofSize: 12) {
+    @IBInspectable public var lengthFont = UIFont.systemFont(ofSize: 12) {
         didSet {
             lengthLabel.font = lengthFont
         }
     }
-    @IBInspectable var textColor = UIColor(hex: 0x333333) {
+    @IBInspectable public var textColor = UIColor(hex: 0x333333) {
         didSet {
             textView.textColor = textColor
         }
     }
-    @IBInspectable var placeholderColor = UIColor.gray {
+    @IBInspectable public var placeholderColor = UIColor.gray {
         didSet {
             placeholderLabel.textColor = placeholderColor
         }
     }
-    @IBInspectable var lengthColor = UIColor(hex: 0x666666) {
+    @IBInspectable public var lengthColor = UIColor(hex: 0x666666) {
         didSet {
             lengthLabel.textColor = lengthColor
         }
     }
-    @IBInspectable var placeholder: String? {
+    @IBInspectable public var placeholder: String? {
         didSet {
             placeholderLabel.text = placeholder
         }
     }
-    @IBInspectable var isFilterEmoji: Bool = false
+    @IBInspectable public var isFilterEmoji: Bool = false
     var textDidChanged: ((String) -> ())?
     
     override init(frame: CGRect) {

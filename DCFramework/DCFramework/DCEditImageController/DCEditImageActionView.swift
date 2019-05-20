@@ -25,7 +25,7 @@ class DCEditImageActionView: UIView {
         
         backgroundColor = UIColor(white: 0, alpha: 0.85)
         
-        rotateButton.setImage(UIImage(contentsOfFile: Bundle.main.path(forResource: "ic_rotate_90_degrees_ccw", ofType: "png")!), for: .normal)
+        rotateButton.setImage(UIImage(contentsOfFile: Bundle(for: DCEditImageActionView.self).path(forResource: "ic_rotate_90_degrees_ccw", ofType: "png")!), for: .normal)
         rotateButton.tag = 0
         rotateButton.imageView?.contentMode = .scaleAspectFit
         rotateButton.imageView?.snp.makeConstraints({ (make) in

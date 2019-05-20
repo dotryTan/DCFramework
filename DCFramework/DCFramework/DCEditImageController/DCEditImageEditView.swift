@@ -90,7 +90,7 @@ class DCEditImageEditView: UIView {
             
             let imageView = UIImageView()
             imageView.tag = i
-            imageView.image = UIImage(contentsOfFile: Bundle.main.path(forResource: images[i], ofType: "png")!)
+            imageView.image = UIImage(contentsOfFile: Bundle(for: DCEditImageController.self).path(forResource: images[i], ofType: "png")!)
             imageWrap.addSubview(imageView)
             imageView.snp.makeConstraints { (make) in
                 if i == 0 {
