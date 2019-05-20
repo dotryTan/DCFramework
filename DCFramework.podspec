@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "DCFramework"
-  spec.version = "1.0.1"
+  spec.version = "1.0.2"
   spec.summary = "常用封装。"
   spec.description = "自己封装的平常要用的类、延展以及和微信一样的图片裁剪器。"
   spec.homepage = "https://github.com/dotryTan/DCFramework"
