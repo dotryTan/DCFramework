@@ -8,7 +8,7 @@
 
 import UIKit.UIColor
 
-extension UIColor {
+public extension UIColor {
     convenience init(hex: UInt32) {
         var red, green, blue, alpha: UInt32
         if hex > 0xffffff {

@@ -9,7 +9,7 @@
 import UIKit.UIView
 import SnapKit
 
-extension UIView {
+public extension UIView {
     var top: CGFloat {
         get {
             return frame.origin.y
@@ -185,12 +185,12 @@ extension UIView {
         }
     }
     
-    public func round(corners: UIRectCorner = UIRectCorner.allCorners, cornerRadi: CGFloat = 0) {
+    func round(corners: UIRectCorner = UIRectCorner.allCorners, cornerRadi: CGFloat = 0) {
         let r = cornerRadi == 0 ? min(self.width, self.height) / 2 : cornerRadi
         self.round(corners: corners, size: CGSize.init(width: r, height: r))
     }
     
-    public func round(corners: UIRectCorner = UIRectCorner.allCorners, size: CGSize) {
+    func round(corners: UIRectCorner = UIRectCorner.allCorners, size: CGSize) {
         if let maskLater = self.layer.mask {
             let rect = self.bounds
             let bezierPath = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: size)
@@ -204,7 +204,7 @@ extension UIView {
         }
     }
     
-    public func snapshot(rect: CGRect = CGRect.zero, scale: CGFloat = UIScreen.main.scale) -> UIImage? {
+    func snapshot(rect: CGRect = CGRect.zero, scale: CGFloat = UIScreen.main.scale) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, 0.0)
         defer {
             UIGraphicsEndImageContext()
@@ -228,7 +228,7 @@ extension UIView {
         return targetRect
     }
     
-    public func safeArea() -> UIEdgeInsets {
+    func safeArea() -> UIEdgeInsets {
         if #available(iOS 11.0, *) {
             return safeAreaInsets
         } else {
@@ -243,7 +243,7 @@ extension UIView {
         }
     }
     
-    public func rounded(_ radius: CGFloat = 0) {
+    func rounded(_ radius: CGFloat = 0) {
         if radius != 0 {
             cornerRadius = radius
         } else {

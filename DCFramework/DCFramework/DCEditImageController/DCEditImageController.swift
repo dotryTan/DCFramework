@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol DCEditImageControllerDelegate: NSObjectProtocol {
+public protocol DCEditImageControllerDelegate: NSObjectProtocol {
     func editController(_ vc: DCEditImageController, finishEdit shotImage: UIImage?, for originImage: UIImage?) -> Void
     func editControllerDidClickCancel(_ vc: DCEditImageController) -> Void
 }
 
-class DCEditImageController: UIViewController {
+public class DCEditImageController: UIViewController {
     var originImage: UIImage!
     var editSize = CGSize(width: UIScreen.main.bounds.width - 20 * 2, height: UIScreen.main.bounds.width - 20 * 2)
     var maskAnimated = true
@@ -40,7 +40,7 @@ class DCEditImageController: UIViewController {
         return widthRadio > heightRadio ? CGSize(width: editSize.width, height: originImage.size.height * widthRadio) : CGSize(width: originImage.size.width * heightRadio, height: editSize.height)
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .black
@@ -87,7 +87,7 @@ class DCEditImageController: UIViewController {
         
     }
     
-    override func viewWillLayoutSubviews() {
+    override public func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         captureView.snp.makeConstraints { (make) in
@@ -107,7 +107,7 @@ class DCEditImageController: UIViewController {
         }
     }
     
-    override func viewDidLayoutSubviews() {
+    override public func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         DispatchQueue.main.asyncAfter(deadline: .now()) {
@@ -117,7 +117,7 @@ class DCEditImageController: UIViewController {
         }
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         if navigationController?.isNavigationBarHidden ~= false {
@@ -126,19 +126,19 @@ class DCEditImageController: UIViewController {
         }
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         showNavigationBarWhenPop ? navigationController?.setNavigationBarHidden(false, animated: true) : ()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override public func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
@@ -188,38 +188,39 @@ class DCEditImageController: UIViewController {
         scrollView.setContentOffset(center, animated: false)
     }
 
-    override var prefersStatusBarHidden: Bool {
+    override public var prefersStatusBarHidden: Bool {
         return true
     }
 }
 
 extension DCEditImageController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("offset:", scrollView.contentOffset)
     }
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         editView.hiddenMaskView(0.33)
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
             editView.showMaskView(0.33)
         }
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         editView.showMaskView(0.33)
     }
     
-    func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
+    public func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
         editView.hiddenMaskView(0.33)
     }
     
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
     
-    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
+    public func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
         scrollView.setZoomScale(scale, animated: false)
         
         editView.showMaskView(0.33)
