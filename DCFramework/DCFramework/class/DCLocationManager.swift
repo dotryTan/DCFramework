@@ -13,8 +13,8 @@ public class DCLocationManager: NSObject {
     
     private let manager = CLLocationManager()
     private let geocoder = CLGeocoder()
-    var cancelWhenDidUpdateLocations = true
-    var didUpdateLocations: ((CLPlacemark) -> Void)?
+    public var cancelWhenDidUpdateLocations = true
+    public var didUpdateLocations: ((CLPlacemark) -> Void)?
     
     override init() {
         super.init()

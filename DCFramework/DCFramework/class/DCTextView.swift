@@ -9,7 +9,7 @@
 import UIKit.UITextView
 
 public class DCTextView: UITextView {
-    @IBInspectable var maxLength: UInt = 0
+    @IBInspectable public var maxLength: UInt = 0
     
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)

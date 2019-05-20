@@ -9,7 +9,7 @@
 import UIKit.UITextField
 
 public class DCTextField: UITextField {
-    @IBInspectable var maxLength: UInt = 0
+    @IBInspectable public var maxLength: UInt = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
